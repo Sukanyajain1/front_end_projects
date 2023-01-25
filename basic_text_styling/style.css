@@ -1,0 +1,24 @@
+h1 {
+    color: white;
+    background-color: black;    
+}
+
+span {
+    color:aqua;
+}
+
+h2 {
+    color: white;
+    background-color: rebeccapurple;
+    font-style:italic;
+    font-weight: lighter;
+    text-align: center;
+}
+
+h3 {
+    color:darkslategray;
+    background-color: cornflowerblue;
+    text-decoration: underline;
+    font-weight: lighter;
+    text-align:right;
+}
