@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dojo Weather</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js"></script>
+</head>
+<body>
+    <div class="nav-bar">
+        <div class="container flex">
+            <h1>Dojo Weather</h1>
+            <ul class="flex">
+                <li onclick="alert('You have selected the Burbank location!')">Burbank</li>
+                <li onclick="alert('You have selected the Chicago location!')">Chicago</li>
+                <li onclick="alert('You have selected the Dallas location!')">Dallas</li>
+            </ul>
+        </div>
+    </div>
+    <main class="container">
+        <header class="flex">
+            <h2>San Jose</h2>
+            <label for="temperature">show temperature in</label>
+            <select name="temperature" id="temperature">
+                <option value="celsius">C</option>
+                <option value="farenheit">F</option>
+            </select>
+        </header>
+        <div class="reports flex">
+            <span class="card">
+                <h3>Today</h3>
+                <img src="./images/rainy.png" alt="rain cloud">
+                <p>some rain</p>
+                <div class="highlights flex">
+                    <h3 class="highs">75</h3>
+                    <h3 class="lows">65</h3>
+                </div>
+            </span>
+            <span class="card">
+                <h3>Tomorrow</h3>
+                <img src="./images/sunny.png" alt="animated sun">
+                <p>some sun</p>
+                <div class="highlights flex">
+                    <h3 class="highs">80</h3>
+                    <h3 class="lows">66</h3>
+                </div>
+            </span>
+            <span class="card">
+                <h3>Friday</h3>
+                <img src="./images/cloudy.png" alt="grey cloud">
+                <p>some clouds</p>
+                <div class="highlights flex">
+                    <h3 class="highs">69</h3>
+                    <h3 class="lows">61</h3>
+                </div>
+            </span>
+            <span class="card">
+                <h3>Saturday</h3>
+                <img src="./images/sunny.png" alt="animated sun">
+                <p>some sun</p>
+                <div class="highlights flex">
+                    <h3 class="highs">78</h3>
+                    <h3 class="lows">70</h3>
+                </div>
+            </span>
+        </div>
+        <div class="flex cookie" id="cookieAccept">
+            <img src="./images/Screen Shot 2023-01-25 at 10.46.26 PM.png" alt="cookie image">
+            <div>
+                <h3>Stop! Cookie time</h3>
+                <p>We use cookies (sadly not the edible ones) to personalize content and ads, to provide social media features and to analyze our traffic. <a href="">Read more...</a></p>
+            </div>
+            <button onclick="remove(cookieAccept)">I Accept</button>
+        </div>
+    </main>
+</body>
+</html>
