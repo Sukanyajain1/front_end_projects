@@ -72,11 +72,11 @@ input {
     border: 2px solid black;
 }
 
-.login {
+#login {
     background-color: cornflowerblue;
-    width: 50px;
+    max-width:fit-content;
 }
 
-.definition {
+#definition {
     background-color: limegreen;
 }
